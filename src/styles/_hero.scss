@@ -1,0 +1,23 @@
+@use 'variaveis';
+
+.hero {
+
+    &__img {
+        width: 50%;
+    }
+    
+    &__title {
+        color: variaveis.$corDoTituloHero;
+        font-size: 28px;
+        position: absolute;
+        top: 25%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        font-family: "Protest Strike", sans-serif;
+    }
+
+    span {
+        font-family: "Protest Strike", sans-serif;
+    }
+}
+
