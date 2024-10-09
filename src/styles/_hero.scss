@@ -1,6 +1,7 @@
 @use 'variaveis';
 
 .hero {
+    padding: 2.6em;
 
     &__img {
         width: 50%;
@@ -8,10 +9,10 @@
     
     &__title {
         color: variaveis.$corDoTituloHero;
-        font-size: 28px;
+        font-size: 32px;
         position: absolute;
-        top: 25%;
-        left: 65%;
+        top: 35%;
+        left: 70%;
         transform: translate(-50%, -50%);
         font-family: "Protest Strike", sans-serif;
     }

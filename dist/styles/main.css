@@ -1,3 +1,7 @@
+.hero {
+  padding: 2.6em;
+}
+
 .hero__img {
   width: 50%;
 }
@@ -5,15 +9,45 @@
 .hero__title {
   color: #fff;
   font-family: Protest Strike, sans-serif;
-  font-size: 28px;
+  font-size: 32px;
   position: absolute;
-  top: 25%;
-  left: 65%;
+  top: 35%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 
 .hero span {
   font-family: Protest Strike, sans-serif;
+}
+
+.sobre {
+  padding: 80px 0;
+  display: flex;
+}
+
+.sobre--info {
+  background-image: linear-gradient(#000, #0a2068);
+}
+
+.sobre__detalhes {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.sobre__detalhes__img {
+  width: 100%;
+  max-width: 400px;
+  margin-left: 25%;
+  display: block;
+}
+
+.sobre__detalhes__info {
+  justify-content: space-between;
+}
+
+.sobre__detalhes__info__titulo {
+  margin-bottom: 12px;
 }
 
 * {
@@ -22,7 +56,6 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
-  list-style: none;
 }
 
 body {
