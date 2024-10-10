@@ -19,11 +19,29 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width: 640px) {
+            flex-direction: column;
+            text-align: center;
+
+            &:last-child {
+                text-align: left;
+            }
+        }
+
         &__img {
             margin-left: 25%;
             display: block;
             max-width: 400px;
             width: 100%;
+
+            @media (max-width: 640px) {
+                margin: 18px auto;
+                max-width: 250px;
+
+                &--image-confirmacao {
+                    display: none;
+                }
+            }
         }
 
         &__info {
@@ -31,10 +49,17 @@
 
             &__titulo {
                 margin-bottom: 12px;
+
+                @media (max-width: 640px) {
+                    font-size: 18px;
+                }
             }
 
             &__descricao {
 
+                @media (max-width: 640px) {
+                    font-size: 12px;
+                }
             }
 
             &__cardapio {
@@ -42,6 +67,10 @@
                 &__item {
                     margin-top: 12px;
                     margin-bottom: 12px;
+                    
+                    @media (max-width: 640px) {
+                        font-size: 12px;
+                    }
                 }
             }
 
@@ -61,7 +90,7 @@
                 &__questoes {
                     margin-bottom: 12px;
 
-                    &__checkbox {
+                    &__radio {
                         margin-right: 5px;
                     }
 
@@ -73,5 +102,11 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 640px) {
+    .sobre {
+        padding: 40px 0;
     }
 }

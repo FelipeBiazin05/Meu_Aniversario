@@ -11,25 +11,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__img" src="./images/Imagem De Fundo.jpg" alt="imagem de anievrsario de 20 anos">
+            <div>
+                <img class="hero__img" src="./images/Imagem De Fundo.jpg" alt="imagem de anievrsario de 20 anos">
             <p class="hero__title">
                 Eu Felipe Biazin te convido para o meu aniversario de 20 anos que começa em <span>10d 12h 20m 13s</span>
             </p>
+            <ul class="hero__info">
+                <li class="hero__info__itemA">
+                    <b>Localização:</b> Celebra Eventos Terra Boa Parana
+                </li>
+                <li class="hero__info__itemB">
+                    <b>Quando:</b> 23/09/2025 ás 19:00hrs
+                </li>
+            </ul>
+            </div>
         </div>
     </header>
     <section class="sobre sobre--info">
-        <div class="container">
+        <div class="container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <div class="sobre__detalhes">
                 <div class="sobre__detalhes__info">
                     <h1 class="sobre__detalhes__info__titulo">
-                        Sobre o local e o horario do aniversario
+                        Sobre o local do aniversario
                     </h1>
                     <p class="sobre__detalhes__info__descricao">
-                        O espaço escolhido para a festa de aniversário é um charmoso salão em um prédio histórico, com grandes janelas que permitem a entrada de luz natural, criando uma atmosfera aconchegante e alegre. As paredes são adornadas com papel de parede delicado, em tons pastel, que trazem um toque vintage ao ambiente, o endereço fica em Terra Boa Paraná ás 19hrs.
+                        O espaço escolhido para a festa de aniversário é um charmoso salão em um prédio histórico, com grandes janelas que permitem a entrada de luz natural, criando uma atmosfera aconchegante e alegre. As paredes são adornadas com papel de parede delicado, em tons pastel, que trazem um toque vintage ao ambiente.
                     </p>
                 </div>
                 <img class="sobre__detalhes__img" src="./images/foto de festa de aniversario.jfif" alt="local">
@@ -37,7 +49,7 @@
         </div>
     </section>
     <section class="sobre sobre--info-comidas">
-        <div class="container">
+        <div class="container" data-aos="fade-left" data-aos-duration="1500">
             <div class="sobre__detalhes">
                 <div class="sobre__detalhes__info">
                     <h1 class="sobre__detalhes__info__titulo">
@@ -54,7 +66,7 @@
                             <b>Prato Principal:</b> O prato principal da festa será um delicioso churrasco, preparado com os melhores cortes de carne.
                         </li>
                         <li class="sobre__detalhes__info__cardapio__item">
-                            <b>Opções Vegetarianas/Veganas:</b> Para os que preferem uma alimentação sem carne, teremos opções deliciosas como risoto de cogumelos e curry de grão-de-bico.
+                            <b>Opções Veganas:</b> Para os que preferem uma alimentação sem carne, teremos opções deliciosas como risoto de cogumelos e curry de grão-de-bico.
                         </li>
                         <li class="sobre__detalhes__info__cardapio__item">
                             <b>Bebidas:</b> Refrescos, sucos naturais e, claro, uma seleção de bebidas alcoólicas, incluindo cervejas e coquetéis.
@@ -69,7 +81,7 @@
         </div>
     </section>
     <section class="sobre"> 
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="sobre__detalhes">
                 <div class="sobre__detalhes__info">
                     <h1 class="sobre__detalhes__info__titulo">
@@ -85,17 +97,18 @@
                             <input required type="tel" name="numeroConvidado" id="numeroConvidado">
                         </div>
                         <div class="sobre__detalhes__info__form__questoes">
-                            <input class="sobre__detalhes__info__form__questoes__checkbox" type="checkbox" name="confirmacao" id="confirmo"><label for="">Confirmo minha presença</label> <br>
-                            <input class="sobre__detalhes__info__form__questoes__checkbox" type="checkbox" name="confirmacao" id="naoConfirmo"><label for="">Não poderei comparecer</label> <br>
-                            <input class="sobre__detalhes__info__form__questoes__checkbox" type="checkbox" name="confirmacao" id="Talvez"><label for="">Talvez</label> <br>
+                            <input class="sobre__detalhes__info__form__questoes__radio" required type="radio" name="confirmacao" id="confirmo"><label for="">Confirmo minha presença</label> <br>
+                            <input class="sobre__detalhes__info__form__questoes__radio" required type="radio" name="confirmacao" id="naoConfirmo"><label for="">Não poderei comparecer</label> <br>
+                            <input class="sobre__detalhes__info__form__questoes__radio" required type="radio" name="confirmacao" id="Talvez"><label for="">Talvez</label> <br>
                         </div>
                         <button>Confirmar</button>
                     </form>
                 </div>
-                <img class="sobre__detalhes__img" src="./images/logo/contato.png" alt="contato">
+                <img class="sobre__detalhes__img sobre__detalhes__img&--image-confirmacao" src="./images/logo/contato.png" alt="contato">
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

@@ -1,24 +1,137 @@
 @use 'variaveis';
 
 .hero {
-    padding: 2.6em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 
-    &__img {
-        width: 50%;
-    }
-    
-    &__title {
-        color: variaveis.$corDoTituloHero;
-        font-size: 28px;
-        position: absolute;
-        top: 40%;
-        left: 70%;
-        transform: translate(-50%, -50%);
-        font-family: "Protest Strike", sans-serif;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
-    span {
-        font-family: "Protest Strike", sans-serif;
+        &__img {
+            width: 50%;
+            max-width: 100%;
+            height: auto; 
+            object-fit: cover; 
+        }
+
+        &__title {
+            color: variaveis.$corDoTituloHero;
+            font-size: 28px;
+            font-family: "Protest Strike", sans-serif;
+            position: absolute; 
+            top: 40%; 
+            left: 70%; 
+            transform: translate(-50%, -50%); 
+            text-align: center; 
+        }
+        
+        span {
+            font-family: "Protest Strike", sans-serif;
+        }
+        
+        &__info {
+        
+        &__itemA {
+            color: variaveis.$corDoTituloHero;
+            font-size: 16px;
+            position: absolute; 
+            top: 70%; 
+            left: 70%; 
+            transform: translate(-50%, -50%); 
+            text-align: center; 
+            list-style: none;
+        }
+
+        &__itemB {
+            color: variaveis.$corDoTituloHero;
+            font-size: 16px;
+            position: absolute; 
+            top: 76%; 
+            left: 70%; 
+            transform: translate(-50%, -50%); 
+            text-align: center; 
+            list-style: none;
+        }
     }
 }
+
+@media (max-width: 1023px) {
+    .hero {
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__info {
+            
+
+            &__itemA {
+                margin: 0; 
+                font-size: 14px;
+                top: 75%;
+                position: absolute; 
+                left: 70%; 
+                transform: translate(-50%, -50%); 
+            }
+
+            &__itemB {
+                margin: 0; 
+                font-size: 14px;
+                top: 65%;
+                position: absolute; 
+                left: 70%; 
+                transform: translate(-50%, -50%); 
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        flex-direction: row; 
+        &__img {
+            width: 40%; 
+        }
+
+        &__title {
+            font-size: 10px; 
+            position: absolute; 
+            top: 40%; 
+            left: 60%; 
+            transform: translate(-50%, -50%); 
+        }
+
+        &__info {
+            
+
+            &__itemA {
+                margin: 0; 
+                font-size: 8px;
+                top: 90%;
+                position: absolute; 
+                left: 60%; 
+                transform: translate(-50%, -50%); 
+            }
+
+            &__itemB {
+                margin: 0; 
+                font-size: 8px;
+                top: 75%;
+                position: absolute; 
+                left: 60%; 
+                transform: translate(-50%, -50%); 
+            }
+        }
+    }
+}
+
+
+
+
+
 
